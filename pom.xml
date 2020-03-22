@@ -20,6 +20,7 @@
 		<module>accountservice</module>
 		<module>webservice</module>
 		<module>registrationservice</module>
+		<module>configservice</module>
 	</modules>
 
 	<properties>
