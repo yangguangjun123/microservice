@@ -18,8 +18,6 @@ public class WebServer {
     public static final String ACCOUNTS_SERVICE_URL = "http://ACCOUNT-SERVICE";
 
     public static void main(String[] args) {
-        // Will configure using web-server.yml
-        System.setProperty("spring.config.name", "web-server");
         SpringApplication.run(WebServer.class, args);
     }
 

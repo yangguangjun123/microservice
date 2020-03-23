@@ -11,12 +11,21 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yangguangjun123/microservice/config-repo
-          repos:
-            - patterns: multi-repo-demo-*
-              uri: https://github.com/spring-cloud-samples/config-repo
+          uri: file:///C:/users/Guangjun/repository
+          searchPaths: microservice
+#          repos:
+#            - patterns: microservice/*
+#              uri: file:///C:/users/Guangjun/repository
 
 server:
   port: 8888
 management:
   context_path: /admin
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/    # http://${registration.server.hostname}:1111/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 5   # DO NOT DO THIS IN PRODUCTION
