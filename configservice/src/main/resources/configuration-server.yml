@@ -11,11 +11,8 @@ spring:
     config:
       server:
         git:
-          uri: file:///C:/users/Guangjun/repository
-          searchPaths: microservice
-#          repos:
-#            - patterns: microservice/*
-#              uri: file:///C:/users/Guangjun/repository
+          uri: https://github.com/yangguangjun123/microservice.git
+          searchPaths: config-repo
 
 server:
   port: 8888
